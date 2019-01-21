@@ -1,0 +1,11 @@
+C:\_git\csharptraining\obj\Debug\netcoreapp2.2\csharptraining.csprojAssemblyReference.cache
+C:\_git\csharptraining\obj\Debug\netcoreapp2.2\csharptraining.csproj.CoreCompileInputs.cache
+C:\_git\csharptraining\obj\Debug\netcoreapp2.2\csharptraining.AssemblyInfoInputs.cache
+C:\_git\csharptraining\obj\Debug\netcoreapp2.2\csharptraining.AssemblyInfo.cs
+C:\_git\csharptraining\bin\Debug\netcoreapp2.2\csharptraining.deps.json
+C:\_git\csharptraining\bin\Debug\netcoreapp2.2\csharptraining.runtimeconfig.json
+C:\_git\csharptraining\bin\Debug\netcoreapp2.2\csharptraining.runtimeconfig.dev.json
+C:\_git\csharptraining\bin\Debug\netcoreapp2.2\csharptraining.dll
+C:\_git\csharptraining\bin\Debug\netcoreapp2.2\csharptraining.pdb
+C:\_git\csharptraining\obj\Debug\netcoreapp2.2\csharptraining.dll
+C:\_git\csharptraining\obj\Debug\netcoreapp2.2\csharptraining.pdb

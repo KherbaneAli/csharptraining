@@ -28,10 +28,72 @@ namespace csharptraining
                     
             foreach (var tree in treeList)
             {
-                Console.WriteLine("|" + tree.Index + "|" + tree.Girth + "|" + tree.Height + "|" + tree.Volume + "|");
+                Console.WriteLine("| {0} | {1} | {2} | {3} |", tree.Index, tree.Girth, tree.Height, tree.Volume);
             }
 
-            Console.WriteLine("Press any key to exit");
+            Console.WriteLine("Please enter which maximum value you would like to obtain: (girth/height/volume) ");
+            var input = Console.ReadLine();
+
+            int index = 0;
+
+            if(input.Equals("girth"))
+            {
+                Console.WriteLine("Obtaining the girth of widest tree...");
+
+                double widest = 0;
+
+                foreach(var tree in treeList.Skip(1))
+                {
+                    double current = Convert.ToDouble(tree.Girth);
+                    if(current>widest)
+                    {
+                        widest = current;
+                    }
+                    index = Convert.ToInt16(tree.Index)+1;
+                }
+
+                Console.WriteLine("The widest girth is ...... {0}in of Tree with index ..... {1}", widest, index);
+            }
+            else if(input.Equals("height"))
+            {
+                Console.WriteLine("Obtaining the height of tallest tree...");
+
+                int tallest = 0;
+                
+                foreach(var tree in treeList.Skip(1))
+                {   
+                    int current = Convert.ToInt16(tree.Height); 
+                    if(current>tallest)
+                    {
+                        tallest = current;
+                        index = Convert.ToInt16(tree.Index)+1;
+                    }
+                }
+                Console.WriteLine("The tallest height is ...... {0}ft of Tree with index ..... {1}", tallest, index);
+            }
+            else if(input.Equals("volume"))
+            {
+                Console.WriteLine("Obtaining the volume of biggest tree...");
+
+                double biggest = 0;
+
+                foreach(var tree in treeList.Skip(1))
+                {
+                    double current = Convert.ToDouble(tree.Volume);
+                    if(current>biggest)
+                    {
+                        biggest = current;
+                    }
+                    index = Convert.ToInt16(tree.Index)+1;
+                }
+
+                Console.WriteLine("The largest volume is ...... {0}ft^3 of Tree with index ..... {1}", biggest, index);
+            }
+            else
+            {
+                Console.WriteLine("Invalid input!");
+            }
+            
             Console.ReadLine();
         }
     }
